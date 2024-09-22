@@ -25,13 +25,13 @@ const ongoingIpo = ipoData.filter(ipo => (ipo.DaysLeft>=0 && ipo.DaysPast>=0));
 
   return (
     <div className="OngoingIpo-page">
-      <Typography variant="h4" align="center" gutterBottom style={{ backgroundColor: '#D3D3D3', padding: '10px', color: '#FFFFFF' }}>
+      <Typography variant="h4" align="center" gutterBottom style={{ backgroundColor: '#2ec4b6', padding: '10px', color: '#FFFFFF' }}>
         Ongoing IPO's
       </Typography>
-      <TableContainer component={Paper} style={{ backgroundColor: '#000000', color: '#FFFFFF', padding: '10px', borderColor: '#6A0DAD', borderWidth: '2px', borderStyle: 'solid' }}>
+      <TableContainer component={Paper} style={{ backgroundColor: '#2ec4b6', color: '#FFFFFF', padding: '10px', borderColor: '#6A0DAD', borderWidth: '2px', borderStyle: 'solid' }}>
         <Table sx={{ minWidth: 650 }}>
           <TableHead>
-            <TableRow>
+            <TableRow style={{ backgroundColor: '#ff9f1c'}}>
               <TableCell style={{ color: '#FFFFFF', fontWeight: 'bold', borderColor: '#6A0DAD' }}>Name</TableCell>
               <TableCell style={{ color: '#FFFFFF', fontWeight: 'bold', borderColor: '#6A0DAD' }}>Subscription</TableCell>
               <TableCell style={{ color: '#FFFFFF', fontWeight: 'bold', borderColor: '#6A0DAD' }}>GMP</TableCell>
@@ -47,10 +47,10 @@ const ongoingIpo = ipoData.filter(ipo => (ipo.DaysLeft>=0 && ipo.DaysPast>=0));
                 <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.name}</TableCell>
                 <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.Subscription}</TableCell>
                 <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.GMP}</TableCell>
-                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.rating}</TableCell>
-                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.issueSize}</TableCell>
-                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.closingDate}</TableCell>
-                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.sme}</TableCell>
+                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.BhamasNumber}</TableCell>
+                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.IpoSize}</TableCell>
+                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.ClosingDate}</TableCell>
+                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>Yes</TableCell>
               </TableRow>
             ))}
           </TableBody>
