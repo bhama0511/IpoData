@@ -34,6 +34,7 @@ const LandingPage = () => {
                 <TableCell><strong>GMP</strong></TableCell>
                 <TableCell><strong>Subscription</strong></TableCell>
                 <TableCell><strong>Bhama's Rating</strong></TableCell>
+                <TableCell><strong>GMP updated</strong></TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -41,9 +42,11 @@ const LandingPage = () => {
                 filteredData.map((ipo, index) => (
                   <TableRow key={index}>
                     <TableCell>{ipo.name}</TableCell>
-                    <TableCell>₹{ipo.GMP}</TableCell>
-                    <TableCell>{ipo.Subscription}x</TableCell>
-                    <TableCell>{ipo.BhamasNumber}</TableCell>
+                    <TableCell>{ipo.GMP} %</TableCell>
+                    <TableCell>{ipo.Subscription} X</TableCell>
+                    <TableCell>{ipo.BhamasNumber}/10</TableCell>
+                    <TableCell>{ipo.GmpUpdated}</TableCell>
+
                   </TableRow>
                 ))
               ) : (

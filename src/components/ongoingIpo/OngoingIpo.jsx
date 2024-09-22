@@ -45,9 +45,9 @@ const ongoingIpo = ipoData.filter(ipo => (ipo.DaysLeft>=0 && ipo.DaysPast>=0));
             {ongoingIpo.map((ipo, index) => (
               <TableRow key={index} style={{ borderColor: '#6A0DAD' }}>
                 <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.name}</TableCell>
-                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.Subscription}</TableCell>
-                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.GMP}</TableCell>
-                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.BhamasNumber}</TableCell>
+                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.Subscription} X</TableCell>
+                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.GMP}%</TableCell>
+                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.BhamasNumber}/10</TableCell>
                 <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.IpoSize}</TableCell>
                 <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.ClosingDate}</TableCell>
                 <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>Yes</TableCell>

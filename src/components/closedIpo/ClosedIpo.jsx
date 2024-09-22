@@ -44,8 +44,8 @@ const ClosedIpo = () => {
               <TableRow key={index} style={{ borderColor: '#6A0DAD' }}>
                 <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.name}</TableCell>
                 <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.Subscription}</TableCell>
-                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.GMP}</TableCell>
-                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.rating}</TableCell>
+                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.GMP}%</TableCell>
+                <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.BhamasNumber}/10</TableCell>
                 <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.issueSize}</TableCell>
                 <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.closingDate}</TableCell>
                 <TableCell style={{ color: '#FFFFFF', borderColor: '#6A0DAD' }}>{ipo.sme}</TableCell>
