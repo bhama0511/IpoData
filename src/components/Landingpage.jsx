@@ -22,7 +22,7 @@ const LandingPage = () => {
         IPO Closing Today
       </Typography>
 
-      {loading && <p>Loading...</p>}
+      {loading && <p>Hold tight Data is being processed for you.</p>}
       {error && <p>Error: {error}</p>}
 
       {!loading && !error && (
